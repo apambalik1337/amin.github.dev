@@ -3,12 +3,8 @@ button {
   height: 100px;
   padding: 5px;
   border-radius: 5px;
-  font-size: 15px;
+  font-size: 20px;
   box-shadow: 0 0 10px 0 red, 0 0 10px 0 blue;
 }
 
-@font-face {
-  font-family: "Roboto-Regular";
-  src: url("Roboto-Regular.woff2");
-}
 
