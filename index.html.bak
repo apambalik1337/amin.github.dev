@@ -53,12 +53,12 @@
 <!-- Image container -->
 <div id="image-container">
   <!-- Add the image -->
-  <img src="https://i.ibb.co/ZS4C5hB/text-1690596525504.png" alt="apambalik1337">
+  <img src="https://i.ibb.co/ZS4C5hB/text-1690596525504.png" alt="An Example Image">
   
   <!-- Font space text link -->
   <div id="font-space-link">
     <a href="https://apambalik1337.github.io/v1">
-      <img src="https://see.fontimg.com/api/renderfont4/j32M/eyJyIjoiZnMiLCJoIjoyMSwidyI6MTAwMCwiZnMiOjIxLCJmZ2MiOiIjRkZGRkZGIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/IkNsaWNrIGhlcmUgdG8gZ28gdG8gdGhlIG9sZCB2ZXJzaW9uIG9mIHRoaXMgc2l0ZQ/the-frontman.png" alt="apambalik1337">
+      <img src="https://see.fontimg.com/api/renderfont4/j32M/eyJyIjoiZnMiLCJoIjoyMSwidyI6MTAwMCwiZnMiOjIxLCJmZ2MiOiIjRkZGRkZGIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/IkNsaWNrIGhlcmUgdG8gZ28gdG8gdGhlIG9sZCB2ZXJzaW9uIG9mIHRoaXMgc2l0ZQ/the-frontman.png" alt="Rock fonts">
     </a>
   </div>
 </div>
