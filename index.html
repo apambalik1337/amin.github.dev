@@ -1,96 +1,559 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+    <title>aminzikryy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+        // JavaScript function for title animation
+        var msg = document.title;
+        var speed = 200;
+        var endChar = " ";
+        var pos = 0;
 
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta charset="UTF-8">
+        function moveTitle() {
+            var ml = msg.length;
+            title = msg.substr(pos, ml) + endChar + msg.substr(0, pos);
+            document.title = title;
+            pos++;
+            if (pos > ml) pos = 0;
+            window.setTimeout("moveTitle()", speed);
+        }
 
- 
-  <title>apambalik1337</title>
-  <meta name="apambalik1337" content="apambalik1337">
-  <meta name="author" content="apambalik1337" />
-  <link rel="stylesheet" media="screen" href="css/style.css">
-  <style>
-    /* Set a higher z-index for the image to bring it to the front */
-    #image-container {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 1; /* Set this value to a higher number if needed */
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 100%;
-    }
+        moveTitle();
+    </script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" type="text/css">
+    <style type="text/css">
+        /* CSS styles for the page */
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Iceland', cursive;
+            font-family: 'Libre Baskerville', serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            cursor: none; /* Hide the default cursor */
+        }
 
-    /* Center the image within the container if needed */
-    #image-container img {
-      max-width: 100%;
-      max-height: 100%;
-    }
-    
-    /* Styling for the font space text link */
-    #font-space-link {
-      margin-top: 10px; /* Adjust this margin as needed */
-      text-align: center;
-    }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
 
-    #font-space-link img {
-      max-width: 100%;
-      height: auto;
-    }
-  </style>
+        /* Button Styles */
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .button {
+            width: 200px;
+            height: 50px;
+            background: black;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.6);
+            transition: 0.5s;
+            color: white;
+        }
+
+        .button:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 0;
+            height: 0;
+            border-top: 2px solid white;
+            border-right: 2px solid white;
+            animation: border-top-right 3s infinite alternate;
+        }
+
+        .button:after {
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 0;
+            height: 0;
+            border-bottom: 2px solid white;
+            border-left: 2px solid white;
+            animation: border-bottom-left 3s infinite alternate;
+        }
+
+        .button:hover {
+            background: rgb(19, 17, 17);
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
+        }
+
+        @keyframes border-top-right {
+            0% { width: 0px; height: 0px; }
+            25% { width: 195px; height: 0px; }
+            50% { width: 195px; height: 44px; }
+            100% { width: 195px; height: 44px; }
+        }
+
+        @keyframes border-bottom-left {
+            0% { width: 0px; height: 0px; opacity: 0; }
+            50% { width: 0px; height: 0px; opacity: 0; }
+            50.1% { width: 0px; height: 0px; opacity: 1; }
+            75% { width: 195px; height: 0px; opacity: 1; }
+            100% { width: 195px; height: 44px; opacity: 1; }
+        }
+
+        /* Custom Mouse Cursor Styles */
+        #mouse-circle {
+            position: absolute;
+            width: 32px;
+            height: 32px;
+            margin: -16px 0 0 -16px;
+            border: 2px solid white;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 9999; /* Ensure the cursor is on top */
+        }
+    </style>
 </head>
-<body>
 
-<!-- count particles -->
-<div class="count-particles">
-  <span class="js-count-particles">--</span> particles
-</div>
+<body class="fade">
+    <div class="container">
+        <!-- Button Container -->
+        <div class="button-container">
+            <!-- Game buttons -->
+			<img src="https://i.imgur.com/B6Gc0qv.gif" alt="Animated GIF">
+			<h1> ./apambalik1337 </h1>
+            <div id="matrix" class="auto-style8">Welcome to my website</div>
+		<style type="text/css">
+        h1 {
+          color: #333;
+          font-size: 30px;
+          margin: 0px auto;
+          text-align: center;
+          text-transform: uppercase;
+          font-family: Orbitron;
+        }
+        .neon {
+          color: #FFFFFF;
+          text-shadow: 0 0 5px #FF0000, 0 0 10px#FF0000, 0 0 30px #FF0000, 0 0 45px #FF0000, 0 0 60px #FF0000;
+        }
 
-<!-- particles.js container -->
-<div id="particles-js"></div>
+        .matrix {
+          color: #FFFFFF;
+          font-family: Arial, Courier, Monotype;
+          font-size: 15pt;
+          text-align: center;
+          width: 10px;
+          padding: 0px;
+          margin: 0px;
+        }
+      </style>
+	  <script type="text/javascript" language="javascript">
 
-<!-- Image container -->
-<div id="image-container">
-  <!-- Add the image -->
-  <img src="https://see.fontimg.com/api/renderfont4/j32M/eyJyIjoiZnMiLCJoIjo2NSwidyI6MTAwMCwiZnMiOjY1LCJmZ2MiOiIjRkZGRkZGIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/YXBhbWJhbGlr/the-frontman.png" alt="Rock fonts"></a>
-  
-  <!-- Font space text link -->
-  <div id="font-space-link">
-    <a href="https://apambalik1337.github.io/v1">
-	<img src="https://see.fontimg.com/api/renderfont4/j32M/eyJyIjoiZnMiLCJoIjoxNiwidyI6MTAwMCwiZnMiOjE2LCJmZ2MiOiIjRkVGRUZFIiwiYmdjIjoiI0I0QTlBOSIsInQiOjF9/Y2xpY2sgaGVyZSB0byBnbyB0byB0aGUgb2xkIHZlcnNpb24gb2YgdGhpcyBzaXRl/the-frontman.png" alt="Rock fonts"></a>
-    </a>
-  </div>
-</div>
 
-<!-- scripts -->
-<script src="../particles.js"></script>
-<script src="js/app.js"></script>
+        <!--
 
-<!-- stats.js -->
-<script src="js/lib/stats.js"></script>
-<script>
-  var count_particles, stats, update;
-  stats = new Stats;
-  stats.setMode(0);
-  stats.domElement.style.position = 'absolute';
-  stats.domElement.style.left = '0px';
-  stats.domElement.style.top = '0px';
-  document.body.appendChild(stats.domElement);
-  count_particles = document.querySelector('.js-count-particles');
-  update = function() {
-    stats.begin();
-    stats.end();
-    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-    }
-    requestAnimationFrame(update);
-  };
-  requestAnimationFrame(update);
-</script>
+        var rows = 1; // must be an odd number
 
+        var speed = 10; // lower is faster
+
+        var reveal = 2; // between 0 and 2 only. The higher, the faster the word appears
+
+        var effectalign = "center" //enter "center" to center it.
+
+        var w3c = document.getElementById && !window.opera;;
+
+        var ie45 = document.all && !window.opera;
+
+        var ma_tab, matemp, ma_bod, ma_row, x, y, columns, ma_txt, ma_cho;
+
+        var m_coch = new Array();
+
+        var m_copo = new Array();
+
+        window.onload = function() {
+
+          if (!w3c && !ie45) return
+
+          var matrix = (w3c)?document.getElementById("matrix"): document.all["matrix"];
+
+          ma_txt = (w3c)?matrix.firstChild.nodeValue: matrix.innerHTML;
+
+          ma_txt = " "+ma_txt+" ";
+
+          columns = ma_txt.length;
+
+          if (w3c) {
+
+            while (matrix.childNodes.length) matrix.removeChild(matrix.childNodes[0]);
+
+            ma_tab = document.createElement("table");
+
+            ma_tab.setAttribute("border", 0);
+
+            ma_tab.setAttribute("align", effectalign);
+
+            ma_tab.style.backgroundColor = "#000000";
+
+            ma_bod = document.createElement("tbody");
+
+            for (x = 0; x < rows; x++) {
+
+              ma_row = document.createElement("tr");
+
+              for (y = 0; y < columns; y++) {
+
+                matemp = document.createElement("td");
+
+                matemp.setAttribute("id", "Mx"+x+"y"+y);
+
+                matemp.className = "matrix";
+
+                matemp.appendChild(document.createTextNode(String.fromCharCode(160)));
+
+                ma_row.appendChild(matemp);
+
+              }
+
+              ma_bod.appendChild(ma_row);
+
+            }
+
+            ma_tab.appendChild(ma_bod);
+
+            matrix.appendChild(ma_tab);
+
+          } else {
+
+            ma_tab = '<ta'+'ble align="'+effectalign+'" border="0" style="background-color:#000000">';
+
+            for (var x = 0; x < rows; x++) {
+
+              ma_tab += '<t'+'r>';
+
+              for (var y = 0; y < columns; y++) {
+
+                ma_tab += '<t'+'d class="matrix" id="Mx'+x+'y'+y+'"> </'+'td>';
+
+              }
+
+              ma_tab += '</'+'tr>';
+
+            }
+
+            ma_tab += '</'+'table>';
+
+            matrix.innerHTML = ma_tab;
+
+          }
+
+          ma_cho = ma_txt;
+
+          for (x = 0; x < columns; x++) {
+
+            ma_cho += String.fromCharCode(32+Math.floor(Math.random()*94));
+
+            m_copo[x] = 0;
+
+          }
+
+          ma_bod = setInterval("mytricks()", speed);
+
+        }
+
+
+
+        function mytricks() {
+
+          x = 0;
+
+          for (y = 0; y < columns; y++) {
+
+            x = x+(m_copo[y] == 100);
+
+            ma_row = m_copo[y]%100;
+
+            if (ma_row && m_copo[y] < 100) {
+
+              if (ma_row < rows+1) {
+
+                if (w3c) {
+
+                  matemp = document.getElementById("Mx"+(ma_row-1)+"y"+y);
+
+                  matemp.firstChild.nodeValue = m_coch[y];
+
+                } else {
+
+                  matemp = document.all["Mx"+(ma_row-1)+"y"+y];
+
+                  matemp.innerHTML = m_coch[y];
+
+                }
+
+                matemp.style.color = "#FF0000";
+
+                matemp.style.fontWeight = "bold";
+
+              }
+
+              if (ma_row > 1 && ma_row < rows+2) {
+
+                matemp = (w3c)?document.getElementById("Mx"+(ma_row-2)+"y"+y): document.all["Mx"+(ma_row-2)+"y"+y];
+
+                matemp.style.fontWeight = "normal";
+
+                matemp.style.color = "#FF0000";
+
+              }
+
+              if (ma_row > 2) {
+
+                matemp = (w3c)?document.getElementById("Mx"+(ma_row-3)+"y"+y): document.all["Mx"+(ma_row-3)+"y"+y];
+
+                matemp.style.color = "#FF0000";
+
+              }
+
+              if (ma_row < Math.floor(rows/2)+1) m_copo[y]++;
+
+              else if (ma_row == Math.floor(rows/2)+1 && m_coch[y] == ma_txt.charAt(y)) zoomer(y);
+
+              else if (ma_row < rows+2) m_copo[y]++;
+
+              else if (m_copo[y] < 100) m_copo[y] = 0;
+
+            } else if (Math.random() > 0.9 && m_copo[y] < 100) {
+
+              m_coch[y] = ma_cho.charAt(Math.floor(Math.random()*ma_cho.length));
+
+              m_copo[y]++;
+
+            }
+
+          }
+
+          if (x == columns) clearInterval(ma_bod);
+
+        }
+
+
+
+        function zoomer(ycol) {
+
+          var mtmp,
+          mtem,
+          ytmp;
+
+          if (m_copo[ycol] == Math.floor(rows/2)+1) {
+
+            for (ytmp = 0; ytmp < rows; ytmp++) {
+
+              if (w3c) {
+
+                mtmp = document.getElementById("Mx"+ytmp+"y"+ycol);
+
+                mtmp.firstChild.nodeValue = m_coch[ycol];
+
+              } else {
+
+                mtmp = document.all["Mx"+ytmp+"y"+ycol];
+
+                mtmp.innerHTML = m_coch[ycol];
+
+              }
+
+              mtmp.style.color = "#FF0000";
+
+              mtmp.style.fontWeight = "bold";
+
+            }
+
+            if (Math.random() < reveal) {
+
+              mtmp = ma_cho.indexOf(ma_txt.charAt(ycol));
+
+              ma_cho = ma_cho.substring(0, mtmp)+ma_cho.substring(mtmp+1, ma_cho.length);
+
+            }
+
+            if (Math.random() < reveal-1) ma_cho = ma_cho.substring(0, ma_cho.length-1);
+
+            m_copo[ycol] += 199;
+
+            setTimeout("zoomer("+ycol+")", speed);
+
+          } else if (m_copo[ycol] > 200) {
+
+            if (w3c) {
+
+              mtmp = document.getElementById("Mx"+(m_copo[ycol]-201)+"y"+ycol);
+
+              mtem = document.getElementById("Mx"+(200+rows-m_copo[ycol]--)+"y"+ycol);
+
+            } else {
+
+              mtmp = document.all["Mx"+(m_copo[ycol]-201)+"y"+ycol];
+
+              mtem = document.all["Mx"+(200+rows-m_copo[ycol]--)+"y"+ycol];
+
+            }
+
+            mtmp.style.fontWeight = "normal";
+
+            mtem.style.fontWeight = "normal";
+
+            setTimeout("zoomer("+ycol+")", speed);
+
+          } else if (m_copo[ycol] == 200) m_copo[ycol] = 100+Math.floor(rows/2);
+
+          if (m_copo[ycol] > 100 && m_copo[ycol] < 200) {
+
+            if (w3c) {
+
+              mtmp = document.getElementById("Mx"+(m_copo[ycol]-101)+"y"+ycol);
+
+              mtmp.firstChild.nodeValue = String.fromCharCode(160);
+
+              mtem = document.getElementById("Mx"+(100+rows-m_copo[ycol]--)+"y"+ycol);
+
+              mtem.firstChild.nodeValue = String.fromCharCode(160);
+
+            } else {
+
+              mtmp = document.all["Mx"+(m_copo[ycol]-101)+"y"+ycol];
+
+              mtmp.innerHTML = String.fromCharCode(160);
+
+              mtem = document.all["Mx"+(100+rows-m_copo[ycol]--)+"y"+ycol];
+
+              mtem.innerHTML = String.fromCharCode(160);
+
+            }
+
+            setTimeout("zoomer("+ycol+")", speed);
+
+          }
+
+
+
+          //start
+
+          var h1 = document.getElementsByTagName("h1")[0],
+
+          text = h1.innerText || h1.textContent,
+
+          split = [],
+          i,
+          lit = 0,
+          timer = null;
+
+          for (i = 0; i < text.length; ++i) {
+
+            split.push("<span>" + text[i] + "</span>");
+
+          }
+
+          h1.innerHTML = split.join("");
+
+          split = h1.childNodes;
+
+
+
+          var flicker = function() {
+
+            lit += 0.01;
+
+            if (lit >= 1) {
+
+              clearInterval(timer);
+
+            }
+
+            for (i = 0; i < split.length; ++i) {
+
+              if (Math.random() < lit) {
+
+                split[i].className = "neon";
+
+              } else {
+
+                split[i].className = "";
+
+              }
+
+            }
+
+          }
+
+          setInterval(flicker, 100);
+
+
+        }
+
+
+      </script>
+
+      <font face="Lucida Console" color="white" size="6px">
+
+			<br>
+            <font color=white face="Times New Roman" size="6">GAME</font>
+            <button onclick="window.open('https://apambalik1337.github.io/v1/clumsy-bird')" class="button">BIRD</button>
+            <button onclick="window.open('https://apambalik1337.github.io/v1/pacman')" class="button">PACMAN</button>
+            <button onclick="window.open('https://apambalik1337.github.io/v1/racing')" class="button">RACING</button>
+            <br>
+            <font color=white face="Times New Roman" size="6">PARTICLES</font>
+            <button onclick="window.open('https://apambalik1337.github.io/v1/particles.js/demo')" class="button">PARTICLES</button>
+            <br>
+            <font color=white face="Times New Roman" size="6">MUSIC</font>
+            <button onclick="window.open('https://www.youtube.com/watch?v=6WW9odZxunk&t=292s')" class="button">NIGHTCORE</button>
+            <button onclick="window.open('https://www.youtube.com/watch?v=8WtRKHwVROs')" class="button">PHONK</button>
+            <button onclick="window.open('https://www.youtube.com/watch?v=j6QHBYJ8d00')" class="button">AVICII</button>
+        </div>
+    </div>
+
+    <!-- Custom Mouse Cursor -->
+    <div id="mouse-circle"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let mousePosX = 0,
+                mousePosY = 0,
+                mouseCircle = document.getElementById('mouse-circle');
+
+            document.onmousemove = (e) => {
+                mousePosX = e.pageX;
+                mousePosY = e.pageY;
+            }
+
+            let delay = 8,
+                revisedMousePosX = 0,
+                revisedMousePosY = 0;
+
+            function delayMouseFollow() {
+                requestAnimationFrame(delayMouseFollow);
+
+                revisedMousePosX += (mousePosX - revisedMousePosX) / delay;
+                revisedMousePosY += (mousePosY - revisedMousePosY) / delay;
+
+                mouseCircle.style.top = revisedMousePosY + 'px';
+                mouseCircle.style.left = revisedMousePosX + 'px';
+            }
+            delayMouseFollow();
+        });
+
+        document.addEventListener("contextmenu", function (e) {
+            e.preventDefault();
+        }, false);
+    </script>
+   <style type="text/css">* {cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym46.cur), auto !important;}</style><a href="https://www.cursors-4u.com/cursor/2005/05/04/sym46.html" target="_blank" title="The Infamous Middle Finger"><img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="The Infamous Middle Finger" style="position:absolute; top: 0px; right: 0px;" /></a>
 </body>
 </html>
